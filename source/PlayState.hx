@@ -938,6 +938,11 @@ class PlayState extends MusicBeatState
 
 		if (curStage == 'defeat'){
 			add(bodiesfront);
+			ClientPrefs.middleScroll = true; // lazy but who cares lol
+			ClientPrefs.opponentStrums = false;
+		} else {
+			ClientPrefs.middleScroll = false;
+			ClientPrefs.opponentStrums = true;
 		}
 
 		switch(curStage.toLowerCase()){
